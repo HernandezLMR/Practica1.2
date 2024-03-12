@@ -1,6 +1,3 @@
-const readline = require('readline');
-let rl = readline.createInterface(process.stdin, process.stdout);
-
 function state(Estado){
     if  (Estado >=0.5)
         return("Despierto");
