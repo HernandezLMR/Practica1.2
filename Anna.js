@@ -18,6 +18,8 @@ let KD; //Knight death
 let SP; //Spy
 
 
+
+
 let free = false;
 
 A = Math.random();
@@ -67,7 +69,7 @@ while (free == false){
             console.log(state(P));
 
             SP = true;
-            
+            break;
         
         case 2:
             //Ataque
@@ -85,6 +87,7 @@ while (free == false){
             else{
                 console.log("Pero el caballero ya esta muerto");
             }
+            break;
 
 
         case 3:
@@ -102,6 +105,7 @@ while (free == false){
             else{
                 console.log("Pero el arquero intercepta la señal! Annalyn se esconde sin poder terminar su señal");
             }
+            break;
             
 
         case 4:
@@ -111,6 +115,7 @@ while (free == false){
                     console.log("Annalyn llega al prisionero sin ser detectada")
                     console.log("Annalyn intenta liberar al prisionero...")
                     if (S = true){
+                        console.log("Annalyn ha liberado al prisionero")
                         free = true;
                     }
                     else{
@@ -125,6 +130,7 @@ while (free == false){
                         console.log("El perro de Annalyn lo espanta");
                         console.log("Annalyn intenta liberar al prisionero...")
                         if (S = true){
+                            console.log("Annalyn ha liberado al prisionero")
                             free = true;
                         }
                         else{
@@ -140,12 +146,13 @@ while (free == false){
             }
             console.log("El arquero la detecta!");
             console.log("Annalyn huye del encampamiento");
+            break;
 
         default:
             console.log("Error, esto no deberia pasar");
+            break;
     }
 
     console.log("Annalyn y el prisionero han logrado escapar");
     
-
 }
