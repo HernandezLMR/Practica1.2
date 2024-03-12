@@ -18,8 +18,6 @@ let KD; //Knight death
 let SP; //Spy
 
 
-
-
 let free = false;
 
 A = Math.random();
@@ -54,26 +52,26 @@ while (free == false){
     switch(move){
         case 1:
             //Espiar
-            console.log("\nAnnalyn espia el acampamiento...");
-            console.log("\nCaballero:");
+            console.log("Annalyn espia el acampamiento...");
+            console.log("Caballero:");
             if (KD == false)
                 console.log(state(K));
             else
                 console.log("Muerto");
             
 
-            console.log("\nArquero:");
+            console.log("Arquero:");
             console.log(state(A));
 
-            console.log("\nPrisionero:");
+            console.log("Prisionero:");
             console.log(state(P));
 
             SP = true;
-            break;
+            
         
         case 2:
             //Ataque
-            console.log("\nAnnalyn se acerca para atacar al caballero...");
+            console.log("Annalyn se acerca para atacar al caballero...");
             if (KD = false){
                 if (K > 0.5){
                     console.log("Pero el caballero la derrota. Annalyn huye del acampamiento");
@@ -87,12 +85,11 @@ while (free == false){
             else{
                 console.log("Pero el caballero ya esta muerto");
             }
-            break;
 
 
         case 3:
             //Señala
-            console.log("\nAnnalyn señala al prisionero...");
+            console.log("Annalyn señala al prisionero...");
             if (A < 0.5){
                 if (P >= 0.5){
                     console.log("El prisionero recibe la señal! Ahora se mantendrá despierto y preparado para escapar");
@@ -105,17 +102,15 @@ while (free == false){
             else{
                 console.log("Pero el arquero intercepta la señal! Annalyn se esconde sin poder terminar su señal");
             }
-            break;
             
 
         case 4:
-            console.log("\nAnnalyn entra al acampamiento e intenta liberar al prisionero...");
+            console.log("Annalyn entra al acampamiento e intenta liberar al prisionero...");
             if (A < 0.5){
                 if (K < 0.5){
                     console.log("Annalyn llega al prisionero sin ser detectada")
-                    console.log("\nAnnalyn intenta liberar al prisionero...")
+                    console.log("Annalyn intenta liberar al prisionero...")
                     if (S = true){
-                        console.log("Annalyn ha liberado al prisionero")
                         free = true;
                     }
                     else{
@@ -127,10 +122,9 @@ while (free == false){
                 else{
                     console.log("El caballero la detecta!");
                     if (D >= 0.5){
-                        console.log("El perro de Annalyn espanta al caballero");
-                        console.log("\nAnnalyn intenta liberar al prisionero...")
+                        console.log("El perro de Annalyn lo espanta");
+                        console.log("Annalyn intenta liberar al prisionero...")
                         if (S = true){
-                            console.log("Annalyn ha liberado al prisionero")
                             free = true;
                         }
                         else{
@@ -146,13 +140,12 @@ while (free == false){
             }
             console.log("El arquero la detecta!");
             console.log("Annalyn huye del encampamiento");
-            break;
 
         default:
             console.log("Error, esto no deberia pasar");
-            break;
     }
 
-    console.log("\n\nAnnalyn y el prisionero han logrado escapar");
+    console.log("Annalyn y el prisionero han logrado escapar");
     
+
 }
