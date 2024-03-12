@@ -48,7 +48,6 @@ while (free == false){
 
     //Determine move
     move = Math.floor(Math.random() * (4)) + 1;
-    console.log(test);
 
     switch(move){
         case 1:
